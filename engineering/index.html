@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering Explorer: browse engineering disciplines, career paths, and fun facts.">
+  <title>Engineering Explorer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%E2%9A%99%EF%B8%8F</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="back-link" href="../index.html">&larr; Urbcon.github.io</a>
+    <h1>Engineering Explorer</h1>
+    <p class="tagline">A quick tour of engineering disciplines, for the curious.</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <input id="search" type="text" placeholder="Search disciplines or topics (e.g. bridges, robots, circuits)&hellip;" autocomplete="off">
+      <button id="surprise">Surprise me</button>
+    </div>
+
+    <p id="empty-state" class="empty-state" hidden>No disciplines match your search.</p>
+
+    <section id="grid" class="grid"></section>
+  </main>
+
+  <div id="detail" class="detail-overlay" hidden>
+    <div class="detail-card">
+      <button id="close-detail" class="close-btn" aria-label="Close">&times;</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Made for anyone curious about engineering.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
